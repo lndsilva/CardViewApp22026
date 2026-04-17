@@ -102,16 +102,15 @@
                 android:orientation="vertical">
 
                 <TextView
-                    android:textStyle="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_margin="5sp"
                     android:text="A casa sonolenta"
-                    android:textSize="20sp" />
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <TextView
-                    android:textAlignment="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -119,6 +118,7 @@
                     android:text="Era uma vez uma casa sonolenta, onde todos viviam dormindo.
 
 Nessa casa tinha uma cama, uma cama aconchegante, numa casa sonolenta, onde todos viviam dormindo."
+                    android:textAlignment="center"
                     android:textSize="14sp" />
 
                 <RelativeLayout
@@ -135,21 +135,21 @@ Nessa casa tinha uma cama, uma cama aconchegante, numa casa sonolenta, onde todo
                         android:numStars="1" />
 
                     <TextView
-                        android:layout_toRightOf="@+id/idRTB"
-                        android:layout_margin="5sp"
                         android:id="@+id/txtNumber"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_margin="5sp"
+                        android:layout_toRightOf="@+id/idRTB"
                         android:text="4.5"
                         android:textSize="20sp"
                         android:textStyle="bold" />
 
                     <ImageView
-                        android:layout_toStartOf="@id/imgFavorite"
                         android:id="@+id/imgShare"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="5dp"
+                        android:layout_toStartOf="@id/imgFavorite"
                         android:src="@drawable/baseline_share" />
 
                     <ImageView
@@ -164,6 +164,35 @@ Nessa casa tinha uma cama, uma cama aconchegante, numa casa sonolenta, onde todo
 
         </LinearLayout>
 
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_margin="10dp"
+        android:layout_width="200dp"
+        android:layout_height="250dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/casa" />
+
+            <TextView
+                android:layout_margin="10sp"
+                android:textSize="24sp"
+                android:textColor="#845738"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Casinha" />
+
+        </LinearLayout>
     </com.google.android.material.card.MaterialCardView>
 
 </LinearLayout>
