@@ -102,14 +102,16 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:textStyle="bold"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
-                    android:layout_margin="10sp"
+                    android:layout_margin="5sp"
                     android:text="A casa sonolenta"
-                    android:textSize="14sp" />
+                    android:textSize="20sp" />
 
                 <TextView
+                    android:textAlignment="center"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
@@ -128,9 +130,13 @@ Nessa casa tinha uma cama, uma cama aconchegante, numa casa sonolenta, onde todo
                         style="@style/Widget.AppCompat.RatingBar.Indicator"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_margin="5dp"
                         android:numStars="1" />
 
                     <TextView
+                        android:layout_toRightOf="@+id/idRTB"
+                        android:layout_margin="5sp"
                         android:id="@+id/txtNumber"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -139,15 +145,19 @@ Nessa casa tinha uma cama, uma cama aconchegante, numa casa sonolenta, onde todo
                         android:textStyle="bold" />
 
                     <ImageView
+                        android:layout_toStartOf="@id/imgFavorite"
                         android:id="@+id/imgShare"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
                         android:src="@drawable/baseline_share" />
 
                     <ImageView
                         android:id="@+id/imgFavorite"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="5dp"
                         android:src="@drawable/baseline_favorite" />
                 </RelativeLayout>
             </LinearLayout>
